@@ -4,7 +4,7 @@
 
   object BuildSettings {
     val buildOrganization = "simplistic"
-    val buildScalaVersion = "2.9.0-1"
+    val buildScalaVersion = "2.10.0"
     val buildVersion      = "1.0.17-SNAPSHOT"
     
     val buildSettings = Defaults.defaultSettings ++ Seq (organization := buildOrganization,
@@ -23,7 +23,7 @@
     val logbackcore	= "ch.qos.logback" % "logback-core"     % logbackVersion
     val logbackclassic	= "ch.qos.logback" % "logback-classic"  % logbackVersion  
 
-    val scalatest       = "org.scalatest"  % "scalatest_2.9.0"  % "1.4.1" % "test"
+    val scalatest       = "org.scalatest"  %% "scalatest"  % "1.9.1" % "test"
     
   }
 
